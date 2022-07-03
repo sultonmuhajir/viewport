@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="theme-color" content="#00adb5" />
+      <title>Viewport Size</title>
+      <link rel="icon" href="./assets/img/favicon.ico" />
+      <style>
+         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+      </style>
+
+      <!-- Tailwind -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script src="./assets//js//tailwind-config.js"></script>
+   </head>
+
+   <body class="font-[Poppins] bg-leaf bg-cover text-[#222831]">
+      <div
+         class="w-[95%] tablet:w-[400px] rounded-[3px] tablet:rounded-[5px] 
+            bg-[#eee] mx-auto my-12 text-center overflow-hidden"
+      >
+         <!-- Header -->
+         <header class="bg-[#00adb5] p-2.5">
+            <h2 class="text-[1.65rem] font-bold">Viewport Size</h2>
+         </header>
+
+         <!-- Main -->
+         <main class="p-2.5 tablet:p-5">
+            <svg
+               xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 576 512"
+               class="w-[70px] tablet:w-[80px] mt-4 mb-3 tablet:my-4 mx-auto"
+            >
+               <path
+                  d="M528 0h-480C21.5 0 0 21.5 0 48v320C0 394.5 21.5 416 48 416h192L224 
+                     464H152C138.8 464 128 474.8 128 488S138.8 512 152 512h272c13.25 0 
+                     24-10.75 24-24s-10.75-24-24-24H352L336 416h192c26.5 0 48-21.5 
+                     48-48v-320C576 21.5 554.5 0 528 0zM512 352H64V64h448V352z"
+               />
+            </svg>
+            <select
+               id="dropdown"
+               class="w-4/5 cursor-pointer mt-[0.6rem] mb-[0.9rem] text-[0.82rem] h-[1.8rem] 
+                  px-[0.2rem] outline-none border border-gray-500 rounded-sm mt-4"
+            >
+               <option value="0">- Unit -</option>
+               <option value="1">Pixel (px)</option>
+               <option value="2">Inch (in)</option>
+               <option value="3">Centimeter (cm)</option>
+            </select>
+            <br />
+            <div
+               class="flex justify-center items-center w-4/5 h-[100px] mx-auto mb-4 
+                  border-[1px] border-[gray] rounded-[3px]"
+            >
+               <pre id="result" class="text-2xl font-bold font-[Poppins]"></pre>
+            </div>
+         </main>
+
+         <!-- Footer -->
+         <footer class="mt-[30px] bg-[#00adb5] text-[0.8rem] p-2.5">
+            <p>&copy; All Rights Reserved by Mhjr</p>
+         </footer>
+      </div>
+
+
+      <!-- Custom Js -->
+      <script src="./assets/js/script.js"></script>
+   </body>
+</html>
